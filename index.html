@@ -3,18 +3,6 @@
 	<head>
 		<meta charset="utf-8">
   		<meta name="viewport" content="width=device-width, initial-scale=1">
-  		<script>
-			function mybutton = document.getElementById("myBtn");
-			window.onscroll = function{scrollFunction()};
-			function scrollFunction(){
-				if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-					mybutton.style.display = "block";
-				} 	
-				else{
-						mybutton.style.display = "none";
-					}
-		}
-		</script>
   		<link rel="stylesheet" href="bootstrap.min.css">
   		<link rel="stylesheet" href="styles.css">
   		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -24,180 +12,187 @@
 			BHAVESH
 		</title>
 	</head>
-		<body data-spy="scroll" data-target=".navbar" data-offset="50">
-			<div class="container-fluid">
-				<div class="row">
-					<div class="col-sm-12">
-						<a href="#top" class="myBtn sticky-bottom"><img src="top.png" style="margin-bottom: 0px; position: sticky; float: right; vertical-align: bottom:20px; right: 30px;" align="right"></a>				
-					</div>
-				</div>
-			</div>
-
-			<nav class="navbar navbar-expand-md bg-dark navbar-dark position-fixed sticky-top" style="right: 0px;left: 0px; background-image:linear-gradient(#def2f1,rgb(255,255,255)); padding-bottom: 0px;">
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
+		<a onscroll="scrollFunction()" onclick="topFunction()" id="myBtn"><img src="top.png" align="right"></a>		
+  		<script>
+			var mybutton = document.getElementById("myBtn");
+			window.onscroll = function() {scrollFunction()};
+			function scrollFunction() {
+				if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+			    	mybutton.style.display = "block";
+			  	} else {
+			    	mybutton.style.display = "none";
+			 	}
+			}
+			function topFunction() {
+			  	document.body.scrollTop = 0;
+			  	document.documentElement.scrollTop = 0;
+			}
+		</script>
+		<nav class="navbar navbar-expand-md bg-dark navbar-dark position-fixed sticky-top" style="right: 0px;left: 0px; background-image:linear-gradient(#def2f1,rgb(255,255,255)); padding-bottom: 0px;">
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-	    			<span class="glyphicon-menu-hamburger" style="float: left;"><img src="navbar.png" height="25" width="25"></span>
+    			<span class="glyphicon-menu-hamburger" style="float: left;"><img src="navbar.png" height="25" width="25"></span>
 			</button>
 			<!--<a class="navbar-brand bhav" href="#" style="text-align: center; background-color:#3aafa9;padding: 0px;"><strong>Bhavesh</strong></a>-->
-	  	<!-- Navbar links -->
-				<div class="collapse navbar-collapse" id="collapsibleNavbar">
-	    			<ul class="navbar-nav">
-	    				<li class="nav-item">
-	        				<a href="#aboutme"><button style="margin-right: 0.5vw; border-radius: 2vw; border: none; padding: 0.5vw; float: left;">About me</button></a>
-	      				</li>
-	    				<li class="nav-item">
-	        				<a href="#present"><button style="margin-right: 0.5vw; border-radius: 2vw; border: none; padding: 0.5vw; float: left;">Presentation</button></a>
-	    				</li>
-	    				<li class="nav-item">
-	        				<a href="#extra"><button style="margin-right: 0.5vw; border-radius: 2vw; border: none; padding: 0.5vw; float: left;">Extra Curriculars</button></a>
-	    				</li>
-	    				<li class="nav-item">
-							<a href="#skills"><button style="margin-right: 0.5vw; border-radius: 2vw; border: none; padding: 0.5vw; float: left;">Skills</button></a>
-	    				</li>
-	    				<li class="nav-item">
-	        				<a href="#photo"><button style="margin-right: 0.5vw; border-radius: 2vw; border: none; padding: 0.5vw; float: left;">Photo Gallery</button></a>
-	    				</li>
-	    			</ul>
-				</div>
-				<br>
-				<div style="padding-right: 4vw;">
-					<a href=""><img src="fb.png" class="imag2"></a> 
-					<a href="https://www.instagram.com/bhaveshkhivesara_/"><img src="insta.png" class="imag"></a>
-					<a href="mailto:bhaveshkhivesra@gmail.com"><img src="gmail1.png" class="imag1"></a>
-					<a href="tel:630-545-5130"><img src="phone.png" class="imag"></a>
-				</div>
-			</nav>
+			<div class="collapse navbar-collapse" id="collapsibleNavbar">
+    			<ul class="navbar-nav">
+    				<li class="nav-item">
+        				<a href="#aboutme"><button style="margin-right: 0.5vw; border-radius: 2vw; border: none; padding: 0.5vw; float: left;">About me</button></a>
+      				</li>
+    				<li class="nav-item">
+        				<a href="#present"><button style="margin-right: 0.5vw; border-radius: 2vw; border: none; padding: 0.5vw; float: left;">Presentation</button></a>
+    				</li>
+    				<li class="nav-item">
+        				<a href="#extra"><button style="margin-right: 0.5vw; border-radius: 2vw; border: none; padding: 0.5vw; float: left;">Extra Curriculars</button></a>
+    				</li>
+    				<li class="nav-item">
+						<a href="#skills"><button style="margin-right: 0.5vw; border-radius: 2vw; border: none; padding: 0.5vw; float: left;">Skills</button></a>
+    				</li>
+    				<li class="nav-item">
+        				<a href="#photo"><button style="margin-right: 0.5vw; border-radius: 2vw; border: none; padding: 0.5vw; float: left;">Photo Gallery</button></a>
+    				</li>
+    			</ul>
+			</div>
+			<br>
+			<div style="padding-right: 4vw;">
+				<a href=""><img src="fb.png" class="imag2"></a> 
+				<a href="https://www.instagram.com/bhaveshkhivesara_/"><img src="insta.png" class="imag"></a>
+				<a href="mailto:bhaveshkhivesra@gmail.com"><img src="gmail1.png" class="imag1"></a>
+				<a href="tel:630-545-5130"><img src="phone.png" class="imag"></a>
+			</div>
+		</nav>
 
-			<div id="top" class="container-fluid height" style="background-color: rgba(0,0,0,0); margin-bottom: 0px; padding-bottom: 0px;">
-				<div class="row h-50 paral1">
-					<div class="parallax col-sm-12 col-xl-12 bspan" style="background-image: url(paral.jpg);">
-						<h2 style=" padding-left: 23vw;padding-right: 2vw;color: rgb(255,255,255);float: right; text-align: left; padding-bottom: 5vw; margin-bottom: 2px; margin-top: 0px; vertical-align: middle;"><span style="background-color:#3aafa9; ">Bhavesh</span><br> <span style="color:#3aafa9;">Khivesara</span><br> <span style="color: #17252a;">Jain</span></h2>
-					</div>
-				</div>
-				<div class=" row margin1 paral height1">
-					<div class="parallax col-sm-12 col-xl-12 bspan" style="background-image: url(bhavesh1.jpg);">
-						<h2 style=" padding-left: 23vw;padding-right: 2vw; color: rgb(255,255,255);float: right;text-align: left; padding-bottom: 5vw; margin-bottom: 2px; margin-top: 0px; vertical-align: middle;"><span style="background-color:#3aafa9; ">Bhavesh</span><br> <span style="color:#3aafa9;">Khivesara</span><br> <span style="color: #17252a;">Jain</span></h2>
-					</div>
+		<div id="top" class="container-fluid height" style="background-color: rgba(0,0,0,0); margin-bottom: 0px; padding-bottom: 0px;">
+			<div class="row h-50 paral1">
+				<div class="parallax col-sm-12 col-xl-12 bspan" style="background-image: url(paral.jpg);">
+					<h2 style=" padding-left: 23vw;padding-right: 2vw;color: rgb(255,255,255);float: right; text-align: left; padding-bottom: 5vw; margin-bottom: 2px; margin-top: 0px; vertical-align: middle;"><span style="background-color:#3aafa9; ">Bhavesh</span><br> <span style="color:#3aafa9;">Khivesara</span><br> <span style="color: #17252a;">Jain</span></h2>
 				</div>
 			</div>
-			<div id="aboutme" class="container-fluid rounded margin" style="background-image:linear-gradient(#def2f1,rgb(255,255,255));">
-				<div class="row d-flex flex-row-reverse justify-content-center">
-					<div class="p-2" style="padding:0vw;">
-						<h3 style="padding: 0px;">ABOUT <span style="color:#17252a;">ME</span></h3>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-sm-4" style="padding: 0vw;">
-						<img src="bhavesh7.jpg" class="rounded img-fluid mx-auto d-block" style="padding:0vw; width: 80%;margin-top: 0px; vertical-align: top;">
-					</div>
-					<div class="col-sm-8" style="">
-						<p style="padding-left: 0vw;">Hey Visitor! I am Bhavesh Khivesara Jain and let me tell you something about myself. I was born and brought up in Hyderabad,India. I was good at studies from the very beginning and also interested in the world of computers. As my interest in computers grew I decided to pursue a career in the INFORMATION TECHNOLOGY INDUSTRY. But I did not want to go for Engineering. So I opted for BCA at Christ(Deemed to be University),Bangalore.	Apart from Computers I like playing Cricket, Video Games, Acting, and Dancing. And I would prefer Smartwork over Hardwork at anytime of the day. I belong to a Jain family and basically we are from Rajasthan's Pali District.In the end I would like to say that,I am a 17 year old who would like to know his actual purpose and wants to build a career in the IT industry.</p>
-					</div>
+			<div class=" row margin1 paral height1">
+				<div class="parallax col-sm-12 col-xl-12 bspan" style="background-image: url(bhavesh1.jpg);">
+					<h2 style=" padding-left: 23vw;padding-right: 2vw; color: rgb(255,255,255);float: right;text-align: left; padding-bottom: 5vw; margin-bottom: 2px; margin-top: 0px; vertical-align: middle;"><span style="background-color:#3aafa9; ">Bhavesh</span><br> <span style="color:#3aafa9;">Khivesara</span><br> <span style="color: #17252a;">Jain</span></h2>
 				</div>
 			</div>
-
-			<div id="present" class="divi rounded margin" style="background-image:linear-gradient(#def2f1,rgb(255,255,255));">
-				<h3><span style="color:#17252a;">MY</span> PRESENTATION</h3>
-				<p style="text-align: center; margin: 5px; padding-bottom: 10px;">
-					<video width="100%" style="height: 30vw; width: 52.6vw" controls>
-						<source src="present.mp4" type="video/mp4">
-					</video>
-				</p>
-			</div>
-
-			<div id="extra" class="container-fluid rounded margin" style="background-image:linear-gradient(#def2f1,rgb(255,255,255));">
-				<div class="row">
-					<div class="col-sm-12" style="padding: 0px;">
-						<h3>EXTRA CURRICULARS <span class="hspan" style="color:#17252a;">&</span> ACADEMICS</h3>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-sm-4" style="padding: 0px;">
-						<img src="bhavesh15.JPG" class="rounded img-fluid mx-auto d-block" style="width: 80%; margin:0px;">
-					</div>
-					<div class="col-sm-8" style="margin: 0vw;">
-						<p>I got involved in street play and other theatre forms after I joined Christ(Deemed to Be University). After I started doing street plays I realised it gives me great boost of confidence. I also did one proscenium play. I have also particpated in many other sports and extra curricular activities in my school too as I have already said that I am interested in sports, dancing and acting.	Now coming to my academics part as I already mentioned I was always good at studies. I scored 9.7/10 CGPA in my 10th and 96.4% in my 12th boards. I had opted for Commerce in my PUC. My favourite subjects were Mathematics and Commerce and also learnt Python by joining a computer coaching center.</p>
-					</div>
+		</div>
+		<div id="aboutme" class="container-fluid rounded margin" style="background-image:linear-gradient(#def2f1,rgb(255,255,255));">
+			<div class="row d-flex flex-row-reverse justify-content-center">
+				<div class="p-2" style="padding:0vw;">
+					<h3 style="padding: 0px;">ABOUT <span style="color:#17252a;">ME</span></h3>
 				</div>
 			</div>
+			<div class="row">
+				<div class="col-sm-4" style="padding: 0vw;">
+					<img src="bhavesh7.jpg" class="rounded img-fluid mx-auto d-block" style="padding:0vw; width: 80%;margin-top: 0px; vertical-align: top;">
+				</div>
+				<div class="col-sm-8" style="">
+					<p style="padding-left: 0vw;">Hey Visitor! I am Bhavesh Khivesara Jain and let me tell you something about myself. I was born and brought up in Hyderabad,India. I was good at studies from the very beginning and also interested in the world of computers. As my interest in computers grew I decided to pursue a career in the INFORMATION TECHNOLOGY INDUSTRY. But I did not want to go for Engineering. So I opted for BCA at Christ(Deemed to be University),Bangalore.	Apart from Computers I like playing Cricket, Video Games, Acting, and Dancing. And I would prefer Smartwork over Hardwork at anytime of the day. I belong to a Jain family and basically we are from Rajasthan's Pali District.In the end I would like to say that,I am a 17 year old who would like to know his actual purpose and wants to build a career in the IT industry.</p>
+				</div>
+			</div>
+		</div>
 
-			<div id="skills" class="rounded margin" style="background-image:linear-gradient(#def2f1,rgb(255,255,255)); padding-bottom: 2vw; width: 100%; max-height: 100%">
-				<h3> SKILLS <span class="hspan" style="color:#17252a;">&</span> STRENGTHS</h3><br>
-				<div class="container-fluid" style="padding-bottom: 2vw;">
-					<div class="row" align="center">
-						<div class="col-sm-6" style="">
-							<div class="flip-card" style="width: 100%;">
-								<div class="flip-card-inner" style="min-width: 100%; max-height: 328px;">
-								    <div class="flip-card-front" style="min-width: 100%;">
-								      	<img src="skills.jpg" class="rounded" style="min-width: 100%; max-height:328px;">
-								    </div>
-									<div class="flip-card-back rounded" style="float: left; min-width: 100%; max-height: 328px;">
-									    <h4 style="font-size:20px;"><strong>Skills</strong></h4>
-										<ul type="none" style="text-align: justify;">
-											<li>Python(***),C(***).</li>
-											<li>HTML and CSS(****).</li>
-											<li>Strong knowledge of Computers.</li>
-											<li>Fast Learner.</li>
-										</ul>
-									</div>
-								</div>
-							</div>
-						</div>
+		<div id="present" class="divi rounded margin" style="background-image:linear-gradient(#def2f1,rgb(255,255,255));">
+			<h3><span style="color:#17252a;">MY</span> PRESENTATION</h3>
+			<p style="text-align: center; margin: 5px; padding-bottom: 10px;">
+				<video width="100%" style="height: 30vw; width: 52.6vw" controls>
+					<source src="present.mp4" type="video/mp4">
+				</video>
+			</p>
+		</div>
 
-					<div class="col-sm-6 marg" style="">
+		<div id="extra" class="container-fluid rounded margin" style="background-image:linear-gradient(#def2f1,rgb(255,255,255));">
+			<div class="row">
+				<div class="col-sm-12" style="padding: 0px;">
+					<h3>EXTRA CURRICULARS <span class="hspan" style="color:#17252a;">&</span> ACADEMICS</h3>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-sm-4" style="padding: 0px;">
+					<img src="bhavesh15.JPG" class="rounded img-fluid mx-auto d-block" style="width: 80%; margin:0px;">
+				</div>
+				<div class="col-sm-8" style="margin: 0vw;">
+					<p>I got involved in street play and other theatre forms after I joined Christ(Deemed to Be University). After I started doing street plays I realised it gives me great boost of confidence. I also did one proscenium play. I have also particpated in many other sports and extra curricular activities in my school too as I have already said that I am interested in sports, dancing and acting.	Now coming to my academics part as I already mentioned I was always good at studies. I scored 9.7/10 CGPA in my 10th and 96.4% in my 12th boards. I had opted for Commerce in my PUC. My favourite subjects were Mathematics and Commerce and also learnt Python by joining a computer coaching center.</p>
+				</div>
+			</div>
+		</div>
+
+		<div id="skills" class="rounded margin" style="background-image:linear-gradient(#def2f1,rgb(255,255,255)); padding-bottom: 2vw; width: 100%; max-height: 100%">
+			<h3> SKILLS <span class="hspan" style="color:#17252a;">&</span> STRENGTHS</h3><br>
+			<div class="container-fluid" style="padding-bottom: 2vw;">
+				<div class="row" align="center">
+					<div class="col-sm-6" style="">
 						<div class="flip-card" style="width: 100%;">
-							<div class="flip-card-inner" style="width: 100%; max-height: 328px;">
-							    <div class="flip-card-front" style="width: 100%; ">
-							   		<img src="strength.jpg" class="rounded" style="width: 100%; max-height: 328px;">
-								</div>
-								<div class="flip-card-back rounded" style="width: 100%; max-height: 328px;">
-								   	<h4 style="font-size: 20px;"><strong>Strengths</strong></h4>
+							<div class="flip-card-inner" style="min-width: 100%; max-height: 328px;">
+							    <div class="flip-card-front" style="min-width: 100%;">
+							      	<img src="skills.jpg" class="rounded" style="min-width: 100%; max-height:328px;">
+							    </div>
+								<div class="flip-card-back rounded" style="float: left; min-width: 100%; max-height: 328px;">
+								    <h4 style="font-size:20px;"><strong>Skills</strong></h4>
 									<ul type="none" style="text-align: justify;">
-										<li>Hardworker but would prefer Smartwork.</li>
-										<li>Determined.</li>
-										<li>Team Player.</li>
-										<li>Sporty.</li>
+										<li>Python(***),C(***).</li>
+										<li>HTML and CSS(****).</li>
+										<li>Strong knowledge of Computers.</li>
+										<li>Fast Learner.</li>
 									</ul>
 								</div>
 							</div>
 						</div>
 					</div>
-				</div>
-			</div>
 
-			<div id="photo" class="rounded marg1" style="background-image:linear-gradient(#def2f1,rgb(255,255,255)); padding: 1.2vw; border: 5px solid #3aafa9;">
-				<h3 style="margin-bottom: 5px;">PHOTO <span style="color:#17252a;">GALLERY</span></h3>
-				<div class="container-fluid">
-					<div class="row">
-						<div class="col-sm-6" style="padding: 0px;">
-							<img src="bhavesh13.jpg" class="rounded img-fluid" style=" width: 100%; position: relative;" height="440">
-						</div>
-						<div class="col-sm-6" style="padding: 0px;">
-							<img src="bhavesh8.jpg" class="rounded img-fluid" style="width: 100%; position: relative;" height="440">
-						</div>
-					</div>
-					<div class="row">
-						<div class="col-sm-6" style="padding: 0px;">
-							<img src="bhavesh.JPG" class="rounded img-fluid" style="width:100%; position: relative;" height="440">
-						</div>
-						<div class="col-sm-6" style="padding: 0px;">
-							<img src="bhavesh.JPG" class="rounded img-fluid" height="440" style="width:100%; position: relative;">
+				<div class="col-sm-6 marg" style="">
+					<div class="flip-card" style="width: 100%;">
+						<div class="flip-card-inner" style="width: 100%; max-height: 328px;">
+						    <div class="flip-card-front" style="width: 100%; ">
+						   		<img src="strength.jpg" class="rounded" style="width: 100%; max-height: 328px;">
+							</div>
+							<div class="flip-card-back rounded" style="width: 100%; max-height: 328px;">
+							   	<h4 style="font-size: 20px;"><strong>Strengths</strong></h4>
+								<ul type="none" style="text-align: justify;">
+									<li>Hardworker but would prefer Smartwork.</li>
+									<li>Determined.</li>
+									<li>Team Player.</li>
+									<li>Sporty.</li>
+								</ul>
+							</div>
 						</div>
 					</div>
 				</div>
 			</div>
-			<div style="padding: 1vw; text-align:right; background-image:linear-gradient(#def2f1,rgb(255,255,255));" class="rounded">
-				<div>
-					<h2 style="color: rgb(255,255,255);" class="footspan"><span style="text-shadow: 0 0 3px #3aafa9, 0 0 5px #3aafa9;">Bhavesh</span> <span style="color:#3aafa9;">Khivesara</span> <span style="color: #17252a;">Jain</span><br></h2>
+		</div>
+
+		<div id="photo" class="rounded marg1" style="background-image:linear-gradient(#def2f1,rgb(255,255,255)); padding: 1.2vw; border: 5px solid #3aafa9;">
+			<h3 style="margin-bottom: 5px;">PHOTO <span style="color:#17252a;">GALLERY</span></h3>
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-sm-6" style="padding: 0px;">
+						<img src="bhavesh13.jpg" class="rounded img-fluid" style=" width: 100%; position: relative;" height="440">
+					</div>
+					<div class="col-sm-6" style="padding: 0px;">
+						<img src="bhavesh8.jpg" class="rounded img-fluid" style="width: 100%; position: relative;" height="440">
+					</div>
 				</div>
-				<div align="center">
-					<a href=""><img src="fb.png" class="imag"></a> 
-					<a href="https://www.instagram.com/bhaveshkhivesara_/"><img src="insta.png" class="imag"></a>
-					<a href="mailto:bhaveshkhivesra@gmail.com"><img src="gmail1.png" class="imag1"></a>
-					<a href="tel:630-545-5130"><img src="phone.png" class="imag"></a>
-				</div>
-				<div align="center" class="aspan">
-					<a href="tel:630-545-5130">Contact No: +91-6305455130</a>
+				<div class="row">
+					<div class="col-sm-6" style="padding: 0px;">
+						<img src="bhavesh.JPG" class="rounded img-fluid" style="width:100%; position: relative;" height="440">
+					</div>
+					<div class="col-sm-6" style="padding: 0px;">
+						<img src="bhavesh.JPG" class="rounded img-fluid" height="440" style="width:100%; position: relative;">
+					</div>
 				</div>
 			</div>
-		</body>
+		</div>
+		<div style="padding: 1vw; text-align:right; background-image:linear-gradient(#def2f1,rgb(255,255,255));" class="rounded">
+			<div>
+				<h2 style="color: rgb(255,255,255);" class="footspan"><span style="text-shadow: 0 0 3px #3aafa9, 0 0 5px #3aafa9;">Bhavesh</span> <span style="color:#3aafa9;">Khivesara</span> <span style="color: #17252a;">Jain</span><br></h2>
+			</div>
+			<div align="center">
+				<a href=""><img src="fb.png" class="imag"></a> 
+				<a href="https://www.instagram.com/bhaveshkhivesara_/"><img src="insta.png" class="imag"></a>
+				<a href="mailto:bhaveshkhivesra@gmail.com"><img src="gmail1.png" class="imag1"></a>
+				<a href="tel:630-545-5130"><img src="phone.png" class="imag"></a>
+			</div>
+			<div align="center" class="aspan">
+				<a href="tel:630-545-5130">Contact No: +91-6305455130</a>
+			</div>
+		</div>
+	</body>
 </html>
