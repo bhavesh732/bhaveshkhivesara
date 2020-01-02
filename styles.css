@@ -193,6 +193,10 @@ body{
 	width: 32px;
 	margin-right: 5px;
 }
+@keyframes mymove {
+	from{left: -200px;}
+	to {left: 0px;}
+}
 @media screen and (max-width: 766px){
 	body,html{
 		font-size: 14px;
@@ -252,7 +256,7 @@ body{
 		height: 45px;
 		width: 45px;
 	}
-	@media screen and (max-width: 425px){
+	@media screen and (max-width: 430px){
 		.marg{
 			margin-top: -100px;
 		}
