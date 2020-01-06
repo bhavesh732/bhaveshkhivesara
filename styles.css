@@ -1,5 +1,6 @@
 body,html{
 	height: 100%;
+	line-height: 1.6;
 }
 button{
 	color: #3aafa9;
@@ -75,7 +76,6 @@ p{
 	padding-left:0vw;
 	padding-bottom: 1vw;
 	padding-right: 3vw;
-	line-height: 1.6;
 }
 -webkit-scrollbar-track{
 	width: 20px;
@@ -227,7 +227,8 @@ body{
 
 @media screen and (max-width: 766px){
 	body,html{
-		font-size: 14px;
+		font-size: 12px;
+		line-height: 1.6;
 	}
 	.footspan{
 		font-size: 15px;
@@ -293,16 +294,15 @@ body{
 		margin-top: -150px;
 	}
 	h3{
-		font-size: 20px;
+		font-size: 16px;
 	}
 	.hspan{
 		font-size: 25px;
 	}
 	p{
-		padding-left: 2vw;
-		padding-right: 2vw;
+		padding-left: 4vw;
+		padding-right: 4vw;
 		margin-top: 10px;
-		line-height: 1.6;
 	}
 	.flip-card-back{
 		padding: 2vw;
