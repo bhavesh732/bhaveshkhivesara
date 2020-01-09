@@ -16,7 +16,7 @@
 		<a onclick="topFunction()" onscroll="scrollFunction()" id="myBtn"><img src="top.png" align="right"></a>
 		
 		<nav class="navbar navbar-expand-md bg-dark navbar-dark position-fixed sticky-top" style="right: 0px;left: 0px; background-image:linear-gradient(#def2f1,rgb(255,255,255)); padding-bottom: 0px;">
-			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar" style="border-width: 0px;">
     			<span class="glyphicon-menu-hamburger" style="float: left;"><img src="navbar.png" height="25" width="25"></span>
 			</button>
 			<!--<a class="navbar-brand bhav" href="#" style="text-align: center; background-color:#3aafa9;padding: 0px;"><strong>Bhavesh</strong></a>-->
@@ -80,16 +80,20 @@
 			</div>
 		</div>
 
-		<div class="rounded margin" onscroll="myscroll()" style="background-image:linear-gradient(#def2f1,rgb(255,255,255));">
-			<div class="col">
+		<div id="present" class="rounded margin col" onscroll="myscroll()" style="background-image:linear-gradient(#def2f1,rgb(255,255,255));">
+			<div class="row">
+				<div class="col-sm-12">
+					<h3><span style="color:#17252a;">MY</span> PRESENTATION</h3>
+				</div>
 			</div>
-			<div id="present" class="col">
-				<h3><span style="color:#17252a;">MY</span> PRESENTATION</h3>
-				<p style="text-align: center; margin: 5px; padding-bottom: 10px;">
-					<video width="100%" style="height: 30vw; width: 52.6vw" controls>
-						<source src="present.mp4" type="video/mp4">
-					</video>
-				</p>
+			<div class="row">
+				<div class="col-sm-12">
+					<p style="text-align: center; padding: 10px; width: 100%;">
+						<video class="img-fluid" style="width: 100%;" controls>
+							<source src="present.mp4" type="video/mp4">
+						</video>
+					</p>
+				</div>
 			</div>
 		</div>
 
