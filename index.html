@@ -128,8 +128,8 @@
 										<ul type="none" style="text-align: justify;">
 											<li>Python(***),C(***).</li>
 											<li>HTML and CSS(****).</li>
+											<li>Javascript(***)</li>
 											<li>Strong knowledge of Computers.</li>
-											<li>Fast Learner.</li>
 										</ul>
 									</div>
 								</div>
@@ -149,6 +149,7 @@
 											<li>Determined.</li>
 											<li>Team Player.</li>
 											<li>Sporty.</li>
+											<li>Fast Learner.</li>
 										</ul>
 									</div>
 								</div>
@@ -223,40 +224,80 @@
 				mydiv.style.visibility = "visible";
 			}
 
-			var mydiv = document.getElementById("aboutme");
-			function myscroll(){
-				if (document.body.scrollTop > 700 || document.documentElement.scrollTop > 700) {
-			    	mydiv.className = "upslide";
-			    	mydiv.style.visibility = "visible";
-			  	}
-			}
-			var mydiv1 = document.getElementById("present");
-			function myscroll1() {
-				if (document.body.scrollTop > 1000 || document.documentElement.scrollTop > 1000) {
-					mydiv1.className = "upslide";
-			    	mydiv1.style.visibility = "visible";
-			  	}
-			}
-			var mydiv2 = document.getElementById("extra");
-			function myscroll2() {
-				if (document.body.scrollTop > 1200 || document.documentElement.scrollTop > 1200) {
-			    	mydiv2.className = "upslide";
-			    	mydiv2.style.visibility = "visible";
-			  	}
-			}
-			var mydiv3 = document.getElementById("skills");
-			function myscroll3() {
-				if (document.body.scrollTop > 2000 || document.documentElement.scrollTop > 2000) {
-			    	mydiv3.className = "upslide";
-			    	mydiv3.style.visibility = "visible";
-			  	}
-			}
-			var mydiv4 = document.getElementById("photo");
-			function myscroll4() {
-				if (document.body.scrollTop > 2300 || document.documentElement.scrollTop > 2300) {
-			    	mydiv4.className = "upslide marg1";
-			    	mydiv4.style.visibility = "visible";
-			  	}
+				var mq = window.matchMedia( "(max-width: 766px)" );
+				if(mq.matches) {
+					var mydiv = document.getElementById("aboutme");
+					function myscroll(){
+						if (document.body.scrollTop > 10 || document.documentElement.scrollTop > 10) {
+					    	mydiv.className = "upslide";
+					    	mydiv.style.visibility = "visible";
+					  	}
+					}
+					var mydiv1 = document.getElementById("present");
+					function myscroll1() {
+						if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+							mydiv1.className = "upslide";
+					    	mydiv1.style.visibility = "visible";
+					  	}
+					}
+					var mydiv2 = document.getElementById("extra");
+					function myscroll2() {
+						if (document.body.scrollTop > 600 || document.documentElement.scrollTop > 600) {
+					    	mydiv2.className = "upslide";
+					    	mydiv2.style.visibility = "visible";
+					  	}
+					}
+					var mydiv3 = document.getElementById("skills");
+					function myscroll3() {
+						if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+					    	mydiv3.className = "upslide";
+					    	mydiv3.style.visibility = "visible";
+					  	}
+					}
+					var mydiv4 = document.getElementById("photo");
+					function myscroll4() {
+						if (document.body.scrollTop > 1100 || document.documentElement.scrollTop > 1100) {
+					    	mydiv4.className = "upslide marg1";
+					    	mydiv4.style.visibility = "visible";
+					  	}
+					}
+				}
+			else{
+				var mydiv = document.getElementById("aboutme");
+				function myscroll(){
+					if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+				    	mydiv.className = "upslide";
+				    	mydiv.style.visibility = "visible";
+				  	}
+				}
+				var mydiv1 = document.getElementById("present");
+				function myscroll1() {
+					if (document.body.scrollTop > 1200 || document.documentElement.scrollTop > 1200) {
+						mydiv1.className = "upslide";
+				    	mydiv1.style.visibility = "visible";
+				  	}
+				}
+				var mydiv2 = document.getElementById("extra");
+				function myscroll2() {
+					if (document.body.scrollTop > 1600 || document.documentElement.scrollTop > 1600) {
+				    	mydiv2.className = "upslide";
+				    	mydiv2.style.visibility = "visible";
+				  	}
+				}
+				var mydiv3 = document.getElementById("skills");
+				function myscroll3() {
+					if (document.body.scrollTop > 2000 || document.documentElement.scrollTop > 2000) {
+				    	mydiv3.className = "upslide";
+				    	mydiv3.style.visibility = "visible";
+				  	}
+				}
+				var mydiv4 = document.getElementById("photo");
+				function myscroll4() {
+					if (document.body.scrollTop > 2300 || document.documentElement.scrollTop > 2300) {
+				    	mydiv4.className = "upslide marg1";
+				    	mydiv4.style.visibility = "visible";
+				  	}
+				}
 			}
 		</script>
 	</body>
