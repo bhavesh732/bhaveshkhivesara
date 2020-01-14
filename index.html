@@ -12,8 +12,8 @@
 			BHAVESH
 		</title>
 	</head>
-	<body data-spy="scroll" data-target=".navbar" data-offset="50">
-		<a onclick="topFunction()" onscroll="scrollFunction()" id="myBtn"><img src="top.png" align="right"></a>
+	<body data-spy="scroll" data-target=".navbar" data-offset="50" style="scroll-behavior: smooth;">
+		<a href="#top" onscroll="scrollFunction()" id="myBtn"><img src="top.png" align="right"></a>
 		
 		<nav class="navbar navbar-expand-md bg-dark navbar-dark position-fixed sticky-top" style="right: 0px;left: 0px; background-image:linear-gradient(#def2f1,rgb(255,255,255)); padding-bottom: 0px;">
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar" style="border-width: 0px;">
@@ -228,44 +228,44 @@
 				mydiv.style.visibility = "visible";
 			}
 
-				var mq = window.matchMedia( "(max-width: 766px)" );
-				if(mq.matches) {
-					var mydiv = document.getElementById("aboutme");
-					function myscroll(){
-						if (document.body.scrollTop > 10 || document.documentElement.scrollTop > 10) {
-					    	mydiv.className = "upslide";
-					    	mydiv.style.visibility = "visible";
-					  	}
-					}
-					var mydiv1 = document.getElementById("present");
-					function myscroll1() {
-						if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
-							mydiv1.className = "upslide";
-					    	mydiv1.style.visibility = "visible";
-					  	}
-					}
-					var mydiv2 = document.getElementById("extra");
-					function myscroll2() {
-						if (document.body.scrollTop > 600 || document.documentElement.scrollTop > 600) {
-					    	mydiv2.className = "upslide";
-					    	mydiv2.style.visibility = "visible";
-					  	}
-					}
-					var mydiv3 = document.getElementById("skills");
-					function myscroll3() {
-						if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
-					    	mydiv3.className = "upslide";
-					    	mydiv3.style.visibility = "visible";
-					  	}
-					}
-					var mydiv4 = document.getElementById("photo");
-					function myscroll4() {
-						if (document.body.scrollTop > 1100 || document.documentElement.scrollTop > 1100) {
-					    	mydiv4.className = "upslide marg1";
-					    	mydiv4.style.visibility = "visible";
-					  	}
+			var mq = window.matchMedia( "(max-width: 766px)" );
+			if(mq.matches) {
+				var mydiv = document.getElementById("aboutme");
+				function myscroll(){
+					if (document.body.scrollTop > 10 || document.documentElement.scrollTop > 10) {
+				    	mydiv.className = "upslide";
+				    	mydiv.style.visibility = "visible";
+				  	}
+				}
+				var mydiv1 = document.getElementById("present");
+				function myscroll1() {
+					if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+						mydiv1.className = "upslide";
+				    	mydiv1.style.visibility = "visible";
+				  	}
+				}
+				var mydiv2 = document.getElementById("extra");
+				function myscroll2() {
+					if (document.body.scrollTop > 600 || document.documentElement.scrollTop > 600) {
+				    	mydiv2.className = "upslide";
+				    	mydiv2.style.visibility = "visible";
+				 	}
+				}
+				var mydiv3 = document.getElementById("skills");
+				function myscroll3() {
+					if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+				    	mydiv3.className = "upslide";
+				    	mydiv3.style.visibility = "visible";
+				  	}
+				}
+				var mydiv4 = document.getElementById("photo");
+				function myscroll4() {
+					if (document.body.scrollTop > 1100 || document.documentElement.scrollTop > 1100) {
+					   	mydiv4.className = "upslide marg1";
+					   	mydiv4.style.visibility = "visible";
 					}
 				}
+			}
 			else{
 				var mydiv = document.getElementById("aboutme");
 				function myscroll(){
@@ -303,6 +303,30 @@
 				  	}
 				}
 			}
+			$(document).ready(function(){
+			  	// Add smooth scrolling to all links
+			 	$("a").on('click', function(event) {
+
+			    // Make sure this.hash has a value before overriding default behavior
+			    if (this.hash !== "") {
+			      	// Prevent default anchor click behavior
+			      	event.preventDefault();
+
+			      	// Store hash
+			      	var hash = this.hash;
+
+			      	// Using jQuery's animate() method to add smooth page scroll
+			      	// The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+			     	$('html, body').animate({
+			        	scrollTop: $(hash).offset().top
+			     	}, 1000, function(){
+
+			        	// Add hash (#) to URL when done scrolling (default click behavior)
+			        	window.location.hash = hash;
+			      	});
+			    	}
+			  	});
+			});
 		</script>
 	</body>
 </html>
