@@ -287,9 +287,9 @@ body{
 	.parallax{
 		background-attachment: scroll;
 	}
-	.myBtn{
-		height: 45px;
-		width: 45px;
+	#myBtn{
+		height: 40px;
+		width: 40px;
 	}
 	@media screen and (max-width: 430px){
 		.marg{
