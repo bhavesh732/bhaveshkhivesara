@@ -1,6 +1,17 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
+*{
+	font-family: "Poppins";
+}
+
+/*@font-face{*/
+	/*font-family: 'MarioFont';*/
+	/*src: url("rubber-block.ttf");*/
+/*}*/
+
 body,html{
 	height: 100%;
 	line-height: 1.6;
+	font-family: "MarioFont";
 }
 button{
 	color: #3aafa9;
@@ -36,7 +47,7 @@ h1{
 }
 h2{
 	text-align:center;
-	font-family: sans-serif;
+	/*font-family: sans-serif;*/
 	font-weight: bold;
 	font-size: 4vw;		
 }
@@ -47,7 +58,7 @@ h3{
 	padding-top: 1vw;
 	margin-bottom: 2vw;
 	border-color: white;
-	font-family: sans-serif;
+	/*font-family: sans-serif;*/
 	margin-top: 1px;
 	font-weight: bold;
 }
@@ -186,7 +197,7 @@ tr{
 	}
 }
 body{
-	font-family: sans-serif;
+	/*font-family: sans-serif;*/
 	font-weight:normal;
 	margin: 2vw;
 	margin-top: 0px;
@@ -313,4 +324,8 @@ body{
 	.flip-card-back{
 		padding: 2vw;
 	}
+}
+
+body{
+	font-family: "MarioFont";
 }
